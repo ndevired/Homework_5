@@ -1,23 +1,28 @@
+/* body stylying*/
 body {
     margin: -18px;
 }
 
+/* font styling */
 @font-face{
     font-family: OleoScript;
     src: url(OleoScript-Regular.ttf);
 }
 
+/* font styling */
 @font-face{
     font-family: Sacramento;
     src: url(Sacramento-Regular.ttf)
 }
 
-p.message-text{ /*free shipping message*/
+/*free shipping message on the top of each page*/
+p.message-text{
     margin: 0px;
     color: #FFFEF8; 
 }
 
-.banner{ /*top dark purple banner*/
+/*top dark purple banner with the free shipping message on every page*/
+.banner{ 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,19 +32,23 @@ p.message-text{ /*free shipping message*/
     font-family: sans-serif;
 }
 
-h1{ /*Fall Treats Heading*/
+/*Fall Treats Heading on home page*/
+h1{ 
     color: #471F43;
     font-family: OleoScript;
     font-size: 50px;
 }
-nav { /*nav bar*/
+
+/*nav bar*/
+nav { 
     text-align: center;
     vertical-align: middle;
     padding: 20px;
 
 }
 
-nav li a{ /*styling of elements in nav bar like menu, our story, etf*/
+/*styling (font) of elements in nav bar such as menu, our story, specials, contact us*/
+nav li a{
     font-family: OleoScript;
     text-decoration: none;
     color: #471F43;
@@ -48,21 +57,29 @@ nav li a{ /*styling of elements in nav bar like menu, our story, etf*/
     font-size: 18px;
 }
 
-.logo{ /*styling logo*/
+/*styling and positioning of logo*/
+.logo{ 
     float: left;
     vertical-align: middle;
+    background-color: transparent;
+    padding: 0px;
 }
 
-img.logosize{ /*styling logo*/
+/*styling logo size*/
+img.logosize{ 
     width: 140px;
 }
 
-.nav_icons{ /*styling icons*/
+/*styling and positioning of icons*/
+.nav_icons{ 
     float: right;
     vertical-align: middle;
+    background-color: transparent;
+    padding: 0px;
 }
 
-.nav-icon{/*styling icons*/
+/*styling the size icons*/
+.nav-icon{
     width: 50px;
 }
 
@@ -72,7 +89,8 @@ nav ul {
     padding: 0;
 }
 
-nav li {/*styling of elements in nav bar like menu, our story, etf*/
+/*styling of elements in nav bar like menu, our story, etf*/
+nav li {
     display: inline-block;
     position: relative;
     padding: 15px 30px 15px 30px;
@@ -83,14 +101,21 @@ nav li {/*styling of elements in nav bar like menu, our story, etf*/
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.runner { /*the banner running under the nav items*/
+/*on click nav button turns white momentarily*/
+nav li:active{
+    background-color: whitesmoke;
+}
+
+/*styling of the banner running under the nav items*/
+.runner { 
     width: 100%;
     height: 20px;
     background: #E0B8DC;
     margin: 20px 0px;
 }
 
-.homeimage{ /*main image on home page*/
+/*main image of cinnamon rolls on home page that is faded out*/
+.homeimage{ 
     background-image: url(Home-Image.png);
     height: 500px;
     margin-top: 50px;
@@ -98,13 +123,15 @@ nav li {/*styling of elements in nav bar like menu, our story, etf*/
     padding-left:200px;
 }
 
-.treats-message{ /*Fall Treats message on home page*/
+/*styling of Fall Treats message on home page*/
+.treats-message{ 
     font-family: sans-serif;
     font-size: 25px;
     color: #471F43; 
 }
 
-.specials-banner{ /*Specials yellow box*/
+/*Specials yellow box on the left side of the homepage*/
+.specials-banner{ 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,50 +140,69 @@ nav li {/*styling of elements in nav bar like menu, our story, etf*/
     top: 225px;
     right:100px;
     min-width: 400px;
-    height: 550px;
+    min-height: 550px;
     background-color: #FEF9CD;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 16px;
+    margin-bottom: 20px;
 }
 
-h2{ /*Specials Name Editing on Home Page*/
+/*h2 formatting*/
+h2{ 
     font-family:Sacramento;
     font-size: 60px;
     color: rgba(185, 92, 176, 0.96);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-h3{ /*Fall Assortment Title Editing on Home Page within Specials*/
+/*Specials Name Editing on Home Page*/
+h2.specials-text{ 
+    font-family:Sacramento;
+    font-size: 60px;
+    color: rgba(185, 92, 176, 0.96);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+/*Fall Assortment Title Editing on Home Page within Specials yellow box*/
+h3{ 
     font-family:Sacramento;
     font-size: 35px;
     color: rgba(0, 0, 0, 0.67);
     margin: 0px;
 
 }
+
+/*Editing of parapgraph within specials yellow box on Home Page*/
 p{
-    line-height: 1.5; /*Specials paragraph Editing on Home Page*/
+    line-height: 1.5;
     font-family: sans-serif;
     color: rgba(0, 0, 0, 0.67);
     margin: 0px;
 
 }
+
+/*Editing size and alignment of parapgraph within specials yellow box on Home Page*/
 p.home-specials-text{
     text-align: center;
     min-width: 100px;
     max-width: 300px;
 }
 
-.gift-box-image{ /*gift box image within specials banner on home page */
+/*edited the size of gift box image within specials banner on home page */
+.gift-box-image{ 
     height: 200px;
-    width: 275 px; 
-
 }
+
+/*flexing content within specials yellow box on home page*/
 .specials-content{
     display: flex;
     flex-direction: row; 
 }
 
-button{ /*View Specials button within specials banner on home page*/
+/*"View Specials button" within specials banner on home page*/
+button{ 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     font-family: sans-serif;
     font-style: normal;
@@ -179,12 +225,14 @@ button{ /*View Specials button within specials banner on home page*/
     align-items: center;
 }
 
+/*flexing the second page*/
 .main-div{
     display:flex;
     justify-content: space-between;
 }
 
-.menu-banner{ /*Cinnamon rolls yellow banner on the left side of menu page*/
+/*Cinnamon rolls yellow banner on the left side of menu page*/
+.menu-banner{ 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -201,7 +249,8 @@ button{ /*View Specials button within specials banner on home page*/
 
 }
 
-.product-all{ /*All products on menu page*/
+/*Editing the sizing and positioning of the products on menu page*/
+.product-all{ 
     display:flex;
     flex-direction: column;
     height: 550px;
@@ -209,13 +258,15 @@ button{ /*View Specials button within specials banner on home page*/
     width: 75%;
 }
 
-.row-1{ /*Flexing rows for easy arrangment on menu page*/
+/*Flexing rows for easy arrangment on menu page*/
+.row-1{ 
     display:flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.product-images{ /*Adjusting image size on menu page*/
+/*Adjusting image size on menu page*/
+.product-images{ 
     height: 250px;
     width:275px;
 }
@@ -224,7 +275,8 @@ button{ /*View Specials button within specials banner on home page*/
     margin: 30px 15px;
 }
 
-.price{ /*Editing text below images on menu page*/
+/*Editing text below images on menu page*/
+.price{ 
     text-align: center;
     font-family: sans-serif;
     font-style: normal;
@@ -234,6 +286,7 @@ button{ /*View Specials button within specials banner on home page*/
     color: #BA60AF;
 }
 
+/*styling the cinnamon roll description in the yellow banner on the left side of the menu page*/
 .cinnamon_roll_description{
     font-family: Sacramento;
     font-style: normal;
@@ -250,11 +303,15 @@ button{ /*View Specials button within specials banner on home page*/
     flex-direction: row;
     margin: 0px 20px;
 }
-span { /*top caret on product detail page*/
+
+/*top and down caret on product detail page*/
+span {
     content: "\005E";
     color:  #E0B8DC;
-  }
-.scrolling-images{ /*mini images on left side of product detail page*/
+}
+
+/*mini images on left side of product detail page*/
+.scrolling-images{ 
     display:flex;
     flex-direction: column;
     margin: 30px 15px;
@@ -263,7 +320,8 @@ span { /*top caret on product detail page*/
     width: 20%;
 }
 
-.large-image{ /*large product image in center of product detail page*/
+/*large product image in center of product detail page*/
+.large-image{ 
     display:flex;
     flex-direction: column;
     width:40%;
@@ -271,7 +329,8 @@ span { /*top caret on product detail page*/
     margin: 30px 15px;
 }
 
-.product-details{ /*heading on product detail page*/
+/*heading on product detail page*/
+.product-details{ 
     display:flex;
     flex-direction: column;
     margin: 30px 15px;
@@ -279,7 +338,8 @@ span { /*top caret on product detail page*/
     width: 40%;
 }
 
-.price-on-detail-page{ /*price on product detail page*/
+/*price on product detail page*/
+.price-on-detail-page{ 
     font-family: sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -288,7 +348,8 @@ span { /*top caret on product detail page*/
     color: #471F43;
 }
 
-.caramel-pecan-description{ /*product description on product detail page*/
+/*product description on product detail page*/
+.caramel-pecan-description{ 
     font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -297,13 +358,15 @@ span { /*top caret on product detail page*/
     color: #471F43;
 }
 
+/*flexing the buttons on product detail page*/
 .quantity-glaze-buttons-div{ 
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
 }
 
-.quantity-buttons{ /*styling of buttons under quantity of rolls on product detail page*/
+/*styling of buttons under quantity of rolls on product detail page*/
+.quantity-buttons{
     width: 64.49px;
     height: 67px;
     left: 962.51px;
@@ -321,7 +384,8 @@ span { /*top caret on product detail page*/
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.glaze-buttons{ /*styling of buttons under glaze on product detail page*/
+/*styling of buttons under glaze on product detail page*/
+.glaze-buttons{ 
     width: 123px;
     height: 81px;
     left: 970px;
@@ -339,7 +403,8 @@ span { /*top caret on product detail page*/
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.add-to-cart{ /*styling of addt to cart button at the bottom of the product detail page*/
+/*styling of add to cart button at the bottom of the product detail page*/
+.add-to-cart{ 
     width: 540px;
     height: 75px;
     left: 1349px;
