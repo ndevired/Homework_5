@@ -415,3 +415,197 @@ span {
     background-color: whitesmoke;
     color: #471F43;
 }
+
+/*creating the main outline of the cart in which everything will reside*/
+.cart-main{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(235, 209, 230, 0.5);
+    width: 700px;
+    height: 650px;
+    left: 360px;
+    top: 278px;
+    margin: 10px 375px;
+}
+
+/*styling the title of the cart, which is CART*/
+.cart-title{
+    font-family: OleoScript;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 66px;
+    color: #471F43;
+    padding: 10px;
+    padding-left: 25px;
+}
+
+.first-row{
+    display:flex;
+    flex-direction: row;
+    border-bottom: 3px solid #471F43;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.continue{
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 28px;
+    color: #471F43;
+    padding: 15px;
+}
+
+/*formatting the image on the left side of the cart*/
+.image-cart{
+    padding: 10px;
+    width: 43%;
+}
+
+/*styling the title of the product, caramel pecan, in the cart in the cart*/
+.caramel-pecan-cart-title{
+    font-family: Sacramento;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 70px;
+    color: #471F43;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*formatting the details of the product in the cart*/
+.cart-details{
+    display:flex;
+    flex-direction: column;
+    width: 57%;
+}
+
+/*adding a border to the product section of the cart and formatting it in the cart*/
+.middle-section-cart{
+    display:flex;
+    flex-direction: row;
+    border-bottom: 1px solid #471F43;
+    padding: 15px;
+}
+
+/*flexing the title of the product and x button in the cart*/
+.middle-section-cart-1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*styling the price, quantity and glaze names in the cart*/
+.price-quantity-class{
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #471F43;
+
+}
+
+/*formatting the organization of glaze and quantity in the cart*/
+.quantity-glaze-organization{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*flexing the shipping information section in the cart*/
+.shipping-info {
+   display: flex;
+   flex-direction: row; 
+   justify-content: space-between;
+   padding: 15px;
+}
+
+/*styling the shipping information section in the cart*/
+.totals {
+    color: #471F43;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 15px;
+    padding: 10px;
+}
+
+/*organizing the check out and buy now buttons in the cart*/
+.check-buy{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+/*styling and formatting the x buttons in the cart*/
+.x-button{
+    background: #471F43;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.12);
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0px;
+    padding: 5px 10px;
+}
+/*cart buttons organization*/
+.cart-buttons-organization{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background-color: #FFFFFF;
+    border: 1px solid #471F43;
+    width: 150px;
+    height: 50px;
+    margin: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+/*styling the product buttons in the cart*/
+.cart-buttons{
+    text-justify: auto;
+    align-items: center;
+    /* width: 50px; */
+    height: 50px;
+    background-color: transparent;
+    border:none;
+}
+
+/*styling the check out and buy now buttons in the cart*/
+.check-buy-buttons{
+    width: 300px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #471F43;
+    box-sizing: border-box;
+}
+
+/*flexing the icons in the nav bar for the product detail page*/
+.icons{
+    display: flex;
+    flex-direction: row;
+}
+
+/*positioning the shopping bag to be relative to the number that gets added to the icon*/
+.shopping-bag{
+    position: relative;
+}
+
+/*positioning the number that gets adding to the shopping bag icon*/
+#update-num{
+    position: absolute;
+    left: 22px;
+    bottom: 20px;
+}
