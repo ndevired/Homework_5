@@ -1,0 +1,58 @@
+<div class="middle-section-cart">
+    <div class="image-cart">
+        <!--Main Image in the Cart-->
+        <img class="product-images" src="caramel-pecan.png" alt="caramel pecan roll">
+    </div>
+    <div class="cart-details">
+        <div class="middle-section-cart-1">
+            <!--Title of the Product in the cart-->
+            <h2 class="caramel-pecan-cart-title">Caramel Pecan</h2>
+            <!--The X button next to the title of the product-->
+            <button class="x-button">x</button>
+        </div>
+        <div>
+            <!--The Price of the product in the cart-->
+            <p class="price-quantity-class">$6.50</p>
+        </div>
+        <div class="quantity-glaze-organization">
+            <div>
+                <!--The quantity of the product in the cart-->
+                <p class="price-quantity-class">Quantity</p>
+            </div>
+            <div class="cart-buttons-organization">
+                <!--organization of the buttons for - 1 +-->
+                <div>
+                    <button class="cart-buttons">
+                        -
+                    </button>
+                </div>
+                <div>1</div>
+                <div>
+                    <button class="cart-buttons">
+                        +
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="quantity-glaze-organization">
+            <div>
+                <!--The glaze of the product in the cart-->
+                <p class="price-quantity-class">Glaze</p>
+            </div>
+            <div class="cart-buttons-organization">
+                <!--organization of the buttons for < none >-->
+                <div>
+                    <button class="cart-buttons">
+                        &lt; 
+                    </button>
+                </div>
+                <div>None</div>
+                <div>
+                    <button class="cart-buttons">
+                        &gt; 
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

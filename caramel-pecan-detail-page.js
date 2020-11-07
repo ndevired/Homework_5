@@ -54,6 +54,7 @@ const none = document.getElementById("glaze-none");
 const sugar = document.getElementById("glaze-sugar");
 const milk = document.getElementById("glaze-milk");
 const chocolate = document.getElementById("glaze-chocolate");
+var currentGlaze = "none"
 
 //Upon clicking on glaze-none, it will change it white and all others will remain the same color (light purple)
 none.onclick = function () {
@@ -62,6 +63,7 @@ none.onclick = function () {
     sugar.style.backgroundColor = "#E0B8DC";
     milk.style.backgroundColor = "#E0B8DC";
     chocolate.style.backgroundColor = "#E0B8DC";
+    currentGlaze="none"
 
 };
 
@@ -72,6 +74,7 @@ sugar.onclick = function () {
     sugar.style.backgroundColor = "whitesmoke";
     milk.style.backgroundColor = "#E0B8DC";
     chocolate.style.backgroundColor = "#E0B8DC";
+    currentGlaze="sugar"
 
 };
 
@@ -82,6 +85,7 @@ milk.onclick = function () {
     sugar.style.backgroundColor = "#E0B8DC";
     milk.style.backgroundColor = "whitesmoke";
     chocolate.style.backgroundColor = "#E0B8DC";
+    currentGlaze="milk"
 
 };
 
@@ -92,24 +96,49 @@ chocolate.onclick = function () {
     sugar.style.backgroundColor = "#E0B8DC";
     milk.style.backgroundColor = "#E0B8DC";
     chocolate.style.backgroundColor = "whitesmoke";
-
+    currentGlaze="chocolate"
 };
+
+class Selected{
+    constructor(quantity, glaze) {
+        this.quantity = quantity
+        this.glaze = glaze
+    }
+}
+
+selectedArr=[]
+ if (localStorage.getItem('productsitems')!= null){
+     selectedArr = JSON.parse(localStorage.getItem('productsitems'));
+}
 
 //updating the number in the shopping bag icon at the top on the product detail page
 let updateNum = document.getElementById("update-num");
 let addToCart = document.getElementById("addtocart");
 addToCart.onclick = function () {
-    console.log(updateNum.innerHTML);
+    // console.log(updateNum.innerHTML);
+    bun = new Selected(currentCount, currentGlaze);
+    // console.log(bun.glaze);
+    selectedArr.push(bun)
+    localStorage.setItem('productsitems', JSON.stringify(selectedArr))
+    console.log("my local storage " + localStorage.getItem('productsitems'));
     let currentCart = parseInt(updateNum.innerHTML);
     let newCart;
 
     if (currentCart) {
         newCart = currentCart + currentCount;
-        console.log(newCart, typeof newCart)
+        // console.log(newCart, typeof newCart)
     } else {
         newCart = currentCount;
     }
 
     updateNum.innerHTML = newCart;
 };
+
+// inside add to cart
+// bun = new Selected(currentCount, currentGlaze)
+
+
+
+
+
 

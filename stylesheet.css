@@ -422,7 +422,7 @@ span {
     flex-direction: column;
     background-color: rgba(235, 209, 230, 0.5);
     width: 700px;
-    height: 650px;
+    /* height: 650px; */
     left: 360px;
     top: 278px;
     margin: 10px 375px;
