@@ -108,13 +108,23 @@ class Selected{
 }
 //creating an array for the selected items to go into to
 selectedArr=[]
+
+//creating a variable to store the number of items in the cart
+let updateNum = document.getElementById("update-num");
+var totalCartQuantity = parseInt(updateNum.innerHTML)
+if (sessionStorage.getItem('cartTotals')!= null){
+    totalCartQuantity = sessionStorage.getItem('cartTotals');
+}
+
+
 //check if the local storage is empty, if it not empty then assign the items to the array
  if (localStorage.getItem('productsitems')!= null){
      selectedArr = JSON.parse(localStorage.getItem('productsitems'));
 }
 
+
 //updating the number in the shopping bag icon at the top on the product detail page
-let updateNum = document.getElementById("update-num");
+
 let addToCart = document.getElementById("addtocart");
 addToCart.onclick = function () {
     // console.log(updateNum.innerHTML);
@@ -124,16 +134,18 @@ addToCart.onclick = function () {
     localStorage.setItem('productsitems', JSON.stringify(selectedArr))
     console.log("my local storage " + localStorage.getItem('productsitems'));
     let currentCart = parseInt(updateNum.innerHTML);
-    let newCart;
+    //let newCart;
 
-    if (currentCart) {
-        newCart = currentCart + currentCount;
+    //if (currentCart) {
+        //newCart = currentCart + currentCount;
         // console.log(newCart, typeof newCart)
-    } else {
-        newCart = currentCount;
-    }
+    //} else {
+        //newCart = currentCount;
+    //}
     //updating the number in the cart through innerHTML
-    updateNum.innerHTML = newCart;
+    totalCartQuantity+=currentCount
+    sessionStorage.setItem('cartTotals', totalCartQuantity)
+    updateNum.innerHTML = totalCartQuantity;
 };
 
 

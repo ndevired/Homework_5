@@ -27,9 +27,15 @@
             <li><a href="#">CONTACT US</a></li>
             <li class="nav_icons">
                 <!--nav bar icons-->
-                <img class="nav-icon" src="noun_Search.png" alt="search icon">
-                <img class="nav-icon" src="noun_tote_bag.png" alt="shopping">
-                <img class="nav-icon" src="noun_person.png" alt="person icon">
+                <div class="icons">
+                    <img class="nav-icon" src="noun_Search.png" alt="search icon">
+                    <div class="shopping-bag">
+                        <a href="./Cart.html"><img class="nav-icon" src="noun_tote_bag.png" alt="shopping"></a>
+                        <!--Linked the shopping bag icon to the cart page-->
+                    <div id="update-num">0</div>
+                    </div>
+                    <img class="nav-icon" src="noun_person.png" alt="person icon">
+                </div>
             </li>
         </ul>
     </nav>
@@ -78,4 +84,5 @@
     </div>
 </body>
 <script src="./cart.js"></script>
+<script src="main.js"></script>
 </html>

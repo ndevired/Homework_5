@@ -19,10 +19,17 @@
             <li><a href="#">SPECIALS</a></li>
             <li><a href="#">LOCATIONS</a></li>
             <li><a href="#">CONTACT US</a></li>
-            <li class="nav_icons"> <!--nav bar icons-->
-                <img class="nav-icon" src="noun_Search.png" alt="search icon">
-                <img class="nav-icon" src="noun_tote_bag.png" alt="shopping">
-                <img class="nav-icon" src="noun_person.png" alt="person icon">
+            <li class="nav_icons">
+                <!--nav bar icons-->
+                <div class="icons">
+                    <img class="nav-icon" src="noun_Search.png" alt="search icon">
+                    <div class="shopping-bag">
+                        <a href="./Cart.html"><img class="nav-icon" src="noun_tote_bag.png" alt="shopping"></a>
+                        <!--Linked the shopping bag icon to the cart page-->
+                    <div id="update-num">0</div>
+                    </div>
+                    <img class="nav-icon" src="noun_person.png" alt="person icon">
+                </div>
             </li>
         </ul>
     </nav>
@@ -50,6 +57,7 @@
                 </p>
                     <button type="button">VIEW SPECIALS</button><!--Heuristic Evaulation Fix, created this new button that leads to specials page-->
         </div>
-    </div>    
+    </div>
+<script src="main.js"></script>
 </body>
 </html>
