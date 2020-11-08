@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caramel Pecan Product Detail Page</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <div class="banner">
+        <p class="message-text">FREE SHIPPING FOR ORDERS OVER $15</p>
+        <!--shipping banner-->
+    </div>
+    <nav>
+        <ul>
+            <li class="logo">
+                <!--div block for logo -->
+                <a href="./index.html"><img class="logosize" src="logo.png" alt="cinnamon roll logo"></a>
+                <!--inserted image of logo-->
+            </li>
+            <!--nav bar headings-->
+            <li><a href="#">OUR STORY</a></li>
+            <li><a href="./Menu.html">MENU</a></li>
+            <!--link back to menu page-->
+            <li><a href="#">SPECIALS</a></li>
+            <li><a href="#">LOCATIONS</a></li>
+            <li><a href="#">CONTACT US</a></li>
+            <li class="nav_icons">
+                <!--nav bar icons-->
+                <div class="icons">
+                    <img class="nav-icon" src="noun_Search.png" alt="search icon">
+                    <div class="shopping-bag">
+                        <a href="./Cart.html"><img class="nav-icon" src="noun_tote_bag.png" alt="shopping"></a>
+                        <!--Linked the shopping bag icon to the cart page-->
+                    <div id="update-num"></div>
+                    </div>
+                    <img class="nav-icon" src="noun_person.png" alt="person icon">
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="runner"></div>
+    <!--runner under nav bar-->
+    <div class="main-page-product-detail">
+        <div class="scrolling-images">
+            <!--the column of cinnamon roll images on the left side of the page-->
+            <span>&#9650;</span><!-- up arrow-->
+            <div class="mini-images">
+                <img src="scrolling-1.png" alt="cinnamon roll">
+                <!--image 1-->
+            </div>
+            <div class="mini-images">
+                <img src="scrolling-2.png" alt="cinnamon roll">
+                <!--image 2-->
+            </div>
+            <div class="mini-images">
+                <img src="scrolling-3.png" alt="cinnamon roll">
+                <!--image 3-->
+            </div>
+            <div class="mini-images">
+                <img src="scrolling-4.png" alt="cinnamon roll">
+                <!--image 4-->
+            </div>
+            <span>&#9660;</span>
+            <!--down arrow-->
+        </div>
+        <div class="large-image">
+            <img src="large-image.png" alt="cinnamon roll">
+            <!--main product detail image of cinnamon roll-->
+        </div>
+        <div class="product-details">
+            <!--Details of the Product-->
+            <div>
+                <h2>Caramel Pecan</h2>
+                <!--Header-->
+                <div>
+                    <p class="price-on-detail-page">$6.50</p>
+                    <!--Price-->
+                </div>
+                <div>
+                    <p class="caramel-pecan-description">Our scrumptious caramel pecan cinnamon rolls are filled with
+                        caramel and topped with candied pecans!</p>
+                    <!--product description-->
+                </div>
+            </div>
+            <div class="quantity-of-rolls">
+                <div>
+                    <p class="price-on-detail-page">Quantity of Rolls</p>
+                    <!--Quantity of Rolls-->
+                </div>
+                <div class="quantity-glaze-buttons-div">
+                    <!--Buttons to choose quantity of rolls-->
+
+                    <button class="quantity-buttons" id="quantity-1" value="1">
+                        <!-- Added class, id and value for button for quantity:1 to use to css and js-->
+                        1
+                    </button>
+
+
+                    <button class="quantity-buttons" id="quantity-3" value="3">
+                        <!-- Added class, id and value for button for quantity:3 to use to css and js-->
+                        3
+                    </button>
+
+                    <button class="quantity-buttons" id="quantity-6" value="6">
+                        <!-- Added class, id and value for button for quantity:6 to use to css and js-->
+                        6
+                    </button>
+
+                    <button class="quantity-buttons" id="quantity-12" value="12">
+                        <!-- Added class, id and value for button for quantity:12 to use to css and js-->
+                        12
+                    </button>
+
+                </div>
+                <div class="glaze">
+                    <div>
+                        <p class="price-on-detail-page">Glaze</p>
+                        <!--Glaze-->
+                    </div>
+                    <div class="quantity-glaze-buttons-div">
+                        <!--buttons to choose the glaze, changed them to all the same size as a heuristic evaluation-->
+
+                        <button class="glaze-buttons" id="glaze-none">
+                            <!-- Added class and for button for glaze=none to use to css and js-->
+                            None
+                        </button>
+
+                        <button class="glaze-buttons" id="glaze-sugar">
+                            <!-- Added class and for button for glaze=sugar to use to css and js-->
+                            Sugar-Milk
+                        </button>
+
+                        <button class="glaze-buttons" id="glaze-milk">
+                            <!-- Added class and for button for glaze=vanilla to use to css and js-->
+                            Vanilla-Milk
+                        </button>
+
+                        <button class="glaze-buttons" id="glaze-chocolate">
+                            <!-- Added class and for button for glaze=vanilla to use to css and js-->
+                            Double Chocolate Chip
+                        </button>
+
+                    </div>
+                </div>
+                <div>
+                    <button class="add-to-cart" id="addtocart">
+                        <!--new heuristic: add to cart at the bottom vs the top from homework 5, added id to implement in js for homework 6A-->
+                        ADD TO CART
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="caramel-pecan-detail-page.js"></script>
+</body>
+</html>
