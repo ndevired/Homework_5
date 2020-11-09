@@ -1,6 +1,6 @@
 # PUILabs
 
-Live Site Here: https://ndevired.github.io/Homework_5/.
+Live Site Here: https://ndevired.github.io/Homework_6A-B/.
 
 The following pages are coded:
 1. The Home Page
