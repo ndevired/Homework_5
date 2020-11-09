@@ -113,7 +113,7 @@ selectedArr=[]
 let updateNum = document.getElementById("update-num");
 var totalCartQuantity = parseInt(updateNum.innerHTML)
 if (sessionStorage.getItem('cartTotals')!= null){
-    totalCartQuantity = sessionStorage.getItem('cartTotals');
+    totalCartQuantity = parseInt(sessionStorage.getItem('cartTotals'));
 }
 
 

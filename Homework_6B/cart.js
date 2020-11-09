@@ -195,9 +195,14 @@ var removeListItems=document.getElementsByClassName("x-button");
 for (let i=0; i<removeListItems.length; i++){
     removeListItems[i].addEventListener("click", function(){ 
         var currentId=removeListItems[i].id;
+        var totalCartQuantity = parseInt(sessionStorage.getItem("cartTotals"));
+        console.log(totalCartQuantity);
+        totalCartQuantity -= parseInt(selectedArr[i].quantity);
+        // totalCartQuantity = 0;
+        sessionStorage.setItem("cartTotals", totalCartQuantity)
+        document.getElementById("update-num").innerHTML= totalCartQuantity
         selectedArr.splice(i,1);
         localStorage.setItem('productsitems',JSON.stringify(selectedArr));
-
         location.reload()
      });
 }
